@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="kigali">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Jamal | Software Engineering Student</title>
+    <meta name="description" content="Portfolio of Osama Jamal, a software engineering student in Kigali, Rwanda, working with Java, C++, JavaScript and SQL and learning Python and AI/ML.">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#070b14">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Osama Jamal | Software Engineering Student">
+    <meta property="og:description" content="Portfolio of Osama Jamal, a software engineering student in Kigali, Rwanda, working with Java, C++, JavaScript and SQL and learning Python and AI/ML.">
+    <meta property="og:url" content="https://osama-0868.github.io/">
+    <link rel="canonical" href="https://osama-0868.github.io/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300..800&family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2338bdf8'%3EOJ%3C/text%3E%3C/svg%3E">
+    <script>
+        /* Apply saved theme before first paint, and decide whether to play the intro */
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            try {
+                var m = localStorage.getItem('oj-mode') || 'dark';
+                var a = localStorage.getItem('oj-accent') || 'kigali';
+                var t = m === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : m;
+                d.setAttribute('data-theme', t);
+                d.setAttribute('data-accent', a);
+            } catch (e) {}
+            try {
+                if (sessionStorage.getItem('oj-booted') || localStorage.getItem('oj-fx') === 'off' ||
+                    matchMedia('(prefers-reduced-motion: reduce)').matches) { d.classList.add('no-boot'); }
+            } catch (e) {}
+            /* Safety net: if script.js fails, show everything anyway */
+            setTimeout(function () {
+                if (!d.classList.contains('ready')) { d.classList.add('ready', 'show-all'); }
+            }, 6500);
+        })();
+</script>
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Osama Jamal", "url": "https://osama-0868.github.io/", "email": "osamajamal0868@gmail.com", "jobTitle": "Software Engineering Student", "address": {"@type": "PostalAddress", "addressLocality": "Kigali", "addressCountry": "RW"}, "sameAs": ["https://github.com/osama-0868", "https://www.linkedin.com/in/osama-jamal0868"], "knowsAbout": ["Java", "C++", "JavaScript", "SQL", "Python", "Machine learning", "Firebase"]}</script>
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol><symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol><symbol id="i-ext" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol><symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol><symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol></svg>
+
+    <div class="boot" id="boot" aria-hidden="true">
+        <div class="boot-box">
+            <div class="boot-lines" id="bootLines"></div>
+            <div class="boot-bar"><span id="bootBar"></span></div>
+            <button type="button" class="boot-skip" id="bootSkip">Skip intro</button>
+        </div>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="glow" id="glow" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#home" class="brand" aria-label="Osama Jamal, back to top">
+                <span class="brand-mark">OJ</span>
+                <span class="brand-name">Osama Jamal</span>
+            </a>
+            <ul class="nav-links" id="navLinks"><li><a href="#about" class="nav-link">About</a></li><li><a href="#skills" class="nav-link">Skills</a></li><li><a href="#projects" class="nav-link">Projects</a></li><li><a href="#education" class="nav-link">Education</a></li><li><a href="#contact" class="nav-link">Contact</a></li></ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch between light and dark mode">
+                    <svg class="ico ico-sun" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg><svg class="ico ico-moon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+                </button>
+                <button class="icon-btn" id="settingsToggle" type="button" aria-label="Open appearance settings" aria-expanded="false" aria-controls="settingsPanel">
+                    <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-sliders"/></svg>
+                </button>
+                <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <nav class="dots-nav" aria-label="Sections"><a href="#home" class="dot-link" data-label="Top" aria-label="Top"></a><a href="#about" class="dot-link" data-label="About" aria-label="About"></a><a href="#skills" class="dot-link" data-label="Skills" aria-label="Skills"></a><a href="#projects" class="dot-link" data-label="Projects" aria-label="Projects"></a><a href="#education" class="dot-link" data-label="Education" aria-label="Education"></a><a href="#contact" class="dot-link" data-label="Contact" aria-label="Contact"></a></nav>
+    <aside class="settings" id="settingsPanel" aria-label="Appearance settings" aria-hidden="true">
+        <p class="settings-title">Appearance</p>
+        <div class="setting">
+            <span class="setting-label">Mode</span>
+            <div class="seg" role="group" aria-label="Color mode">
+                <button type="button" data-mode="light" aria-pressed="false">Light</button>
+                <button type="button" data-mode="dark" aria-pressed="true">Dark</button>
+                <button type="button" data-mode="system" aria-pressed="false">Auto</button>
+            </div>
+        </div>
+        <div class="setting">
+            <span class="setting-label">Accent color</span>
+            <div class="swatches" role="group" aria-label="Accent color">
+                <button type="button" class="swatch" data-accent="kigali" aria-label="Kigali: sky blue and sun yellow" aria-pressed="true"></button>
+                <button type="button" class="swatch" data-accent="aurora" aria-label="Aurora: violet and cyan" aria-pressed="false"></button>
+                <button type="button" class="swatch" data-accent="ember" aria-label="Ember: orange and rose" aria-pressed="false"></button>
+                <button type="button" class="swatch" data-accent="jade" aria-label="Jade: green and sky" aria-pressed="false"></button>
+            </div>
+        </div>
+        <div class="setting setting-row">
+            <span class="setting-label" id="fxLabel">Animated effects</span>
+            <button type="button" class="switch" id="fxSwitch" role="switch" aria-checked="true" aria-labelledby="fxLabel"><span></span></button>
+        </div>
+    </aside>
+
+    <main>
+        <section id="home" class="hero">
+            <canvas id="net" class="net" aria-hidden="true"></canvas>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="status reveal"><span class="pulse"></span>Open to internships and junior roles</p>
+                    <h1 class="hero-name" aria-label="Osama Jamal"><span aria-hidden="true"><span class="word"><span class="ch" style="--i:0">O</span><span class="ch" style="--i:1">s</span><span class="ch" style="--i:2">a</span><span class="ch" style="--i:3">m</span><span class="ch" style="--i:4">a</span></span> <span class="word"><span class="ch" style="--i:6">J</span><span class="ch" style="--i:7">a</span><span class="ch" style="--i:8">m</span><span class="ch" style="--i:9">a</span><span class="ch" style="--i:10">l</span></span></span></h1>
+                    <h2 class="hero-role reveal" id="heroRole">Software engineering student in Kigali, building with Java, C++, JavaScript and SQL.</h2>
+                    <p class="hero-text reveal">I like turning ideas into clean, working software, from database design to responsive websites. Right now I&#x27;m learning Python and AI/ML to take on bigger problems.</p>
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn btn-glow magnetic">See my projects</a>
+                        <a href="#contact" class="btn btn-ghost magnetic">Get in touch</a>
+                    </div>
+                    <div class="hero-foot reveal">
+                        <ul class="social"><li><a href="https://github.com/osama-0868" target="_blank" rel="noopener" aria-label="Osama on GitHub"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a></li><li><a href="https://www.linkedin.com/in/osama-jamal0868" target="_blank" rel="noopener" aria-label="Osama on LinkedIn"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li><li><a href="mailto:osamajamal0868@gmail.com" aria-label="Email Osama"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></a></li></ul>
+                        <button class="hint" type="button" id="hintTerm"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-terminal"/></svg><span>Try the terminal</span><kbd>&#96;</kbd></button>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="code-card" data-tilt="5">
+                        <div class="code-top">
+                            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <div class="code-tabs" role="tablist" aria-label="Choose a language">
+                                <button type="button" class="code-tab active" role="tab" aria-selected="true" data-lang="java">Osama.java</button>
+                                <button type="button" class="code-tab" role="tab" aria-selected="false" data-lang="python">osama.py</button>
+                            </div>
+                        </div>
+                        <pre class="code-body" aria-label="A short code snippet describing Osama"><code id="codeEl"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="marquee" aria-hidden="true"><div class="marq marq-a"><div class="marq-track"><div class="marq-unit"><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span></div><div class="marq-unit"><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span></div></div></div><div class="marq marq-b"><div class="marq-track"><div class="marq-unit"><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span></div><div class="marq-unit"><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span><span class="m-item">Java</span><span class="m-dot"></span><span class="m-item">Python</span><span class="m-dot"></span><span class="m-item">C++</span><span class="m-dot"></span><span class="m-item">SQL</span><span class="m-dot"></span><span class="m-item">JavaScript</span><span class="m-dot"></span><span class="m-item">Firebase</span><span class="m-dot"></span><span class="m-item">AI/ML</span><span class="m-dot"></span></div></div></div></section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">About me</h2>
+                <p class="statement" id="statement" aria-label="I&#x27;m a software engineering student in Kigali. I build databases, websites and small programs, I like code that reads clearly, and I&#x27;m teaching myself Python and machine learning to build smarter software."><span aria-hidden="true"><span class="w">I&#x27;m</span> <span class="w">a</span> <span class="w">software</span> <span class="w">engineering</span> <span class="w">student</span> <span class="w">in</span> <span class="w">Kigali.</span> <span class="w">I</span> <span class="w">build</span> <span class="w">databases,</span> <span class="w">websites</span> <span class="w">and</span> <span class="w">small</span> <span class="w">programs,</span> <span class="w">I</span> <span class="w">like</span> <span class="w">code</span> <span class="w">that</span> <span class="w">reads</span> <span class="w">clearly,</span> <span class="w">and</span> <span class="w">I&#x27;m</span> <span class="w">teaching</span> <span class="w">myself</span> <span class="w">Python</span> <span class="w">and</span> <span class="w">machine</span> <span class="w">learning</span> <span class="w">to</span> <span class="w">build</span> <span class="w">smarter</span> <span class="w">software.</span></span></p>
+                <div class="about-grid">
+                    <figure class="photo reveal" data-tilt="4">
+                        <div class="photo-ring">
+                            <img src="osama.PNG" alt="Portrait of Osama Jamal" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('no-photo')">
+                            <span class="photo-fallback" aria-hidden="true">OJ</span>
+                        </div>
+                    </figure>
+                    <dl class="facts reveal">
+                        <div><dt>Based in</dt><dd>Kigali, Rwanda</dd></div><div><dt>Studying</dt><dd>Software engineering</dd></div><div><dt>Looking for</dt><dd>Internships and junior roles</dd></div>
+                        <div><dt>Email</dt><dd><a href="mailto:osamajamal0868@gmail.com">osamajamal0868@gmail.com</a></dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Skills</h2>
+                <p class="lead reveal">What I use today, and what I'm picking up next. Outlined words are the ones I'm still learning.</p>
+                <div class="skill-rows"><div class="skill-group reveal"><h3>Languages</h3><ul class="skill-words"><li class="skill"><span>Java</span></li><li class="skill"><span>C++</span></li><li class="skill"><span>JavaScript</span></li><li class="skill"><span>SQL</span></li></ul></div><div class="skill-group reveal"><h3>Web</h3><ul class="skill-words"><li class="skill"><span>HTML5</span></li><li class="skill"><span>CSS3</span></li><li class="skill"><span>Responsive design</span></li><li class="skill"><span>Firebase</span></li></ul></div><div class="skill-group reveal"><h3>Tools</h3><ul class="skill-words"><li class="skill"><span>Git</span></li><li class="skill"><span>GitHub</span></li><li class="skill"><span>VS Code</span></li></ul></div><div class="skill-group reveal"><h3>Learning now</h3><ul class="skill-words"><li class="skill learning"><span>Python</span></li><li class="skill learning"><span>AI/ML</span></li><li class="skill learning"><span>Advanced JavaScript</span></li></ul></div></div>
+            </div>
+        </section>
+        <section id="projects" class="hscroll static" data-hscroll>
+            <div class="hscroll-pin">
+                <div class="hscroll-head container">
+                    <div>
+                        <h2 class="section-title">Projects</h2>
+                        <p class="lead">Three things I've built. Scroll to move through them.</p>
+                    </div>
+                    <div class="hmeta"><span class="hcount" id="hcount">1 / 3</span><div class="hprogress"><span></span></div></div>
+                </div>
+                <div class="hscroll-track">
+                    <article class="panel" data-tilt="2">
+                        <div class="cover cover-a" aria-hidden="true">
+                            <span class="cover-mark">VO</span>
+                            <span class="cover-sub">Live website</span>
+                        </div>
+                        <div class="panel-body">
+                            <h3>The Vision Office</h3>
+                            <p>A live website for an education-focused organisation, built around the line &quot;Shaping Bright Futures Through Education&quot; and hosted on Firebase.</p>
+                            <ul class="chips small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Firebase</li></ul>
+                            <div class="project-links"><a class="link-btn" href="https://the-vision-dd56e.web.app" target="_blank" rel="noopener">Visit the site <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a></div>
+                        </div>
+                    </article>
+                    <article class="panel" data-tilt="2">
+                        <div class="cover cover-b" aria-hidden="true">
+                            <span class="cover-mark">JTC</span>
+                            <span class="cover-sub">Website</span>
+                        </div>
+                        <div class="panel-body">
+                            <h3>JTC Training Website</h3>
+                            <p>A website for JTC with login and verification pages, a custom 404 page and Firebase behind it.</p>
+                            <ul class="chips small"><li>HTML</li><li>JavaScript</li><li>Firebase</li></ul>
+                            <div class="project-links"><a class="link-btn" href="https://github.com/osama-0868/JAMAL-TRAINING-JTC" target="_blank" rel="noopener">View the code <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a></div>
+                        </div>
+                    </article>
+                    <article class="panel" data-tilt="2">
+                        <div class="cover cover-c" aria-hidden="true">
+                            <span class="cover-mark">SQL</span>
+                            <span class="cover-sub">SQL database</span>
+                        </div>
+                        <div class="panel-body">
+                            <h3>Bank Management System</h3>
+                            <p>A relational database project for a bank, written in SQL.</p>
+                            <ul class="chips small"><li>SQL</li><li>Database design</li></ul>
+                            <div class="project-links"><a class="link-btn" href="https://github.com/osama-0868/bank_management_system" target="_blank" rel="noopener">View the code <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a></div>
+                        </div>
+                    </article>
+                    <a class="panel panel-end" href="https://github.com/osama-0868" target="_blank" rel="noopener">
+                        <span class="end-title">More on GitHub</span>
+                        <svg class="ico end-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Education</h2>
+                <p class="lead reveal">University studies, plus the things I teach myself on the side.</p>
+                <ol class="timeline">
+                    <li class="t-item">
+                        <span class="t-dot" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <span class="t-tag">In progress</span>
+                            <h3>Software engineering</h3>
+                            <p class="t-sub">Adventist University of Central Africa, Kigali</p>
+                            <p>Studying software development with a focus on programming and databases. Coursework projects include a revenue administration database for my DBMS course.</p>
+                        </div>
+                    </li>
+                    <li class="t-item">
+                        <span class="t-dot" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <span class="t-tag">Ongoing</span>
+                            <h3>Web development and Firebase</h3>
+                            <p class="t-sub">Self-directed learning</p>
+                            <p>Building and deploying websites with HTML, CSS, JavaScript and Firebase hosting.</p>
+                        </div>
+                    </li>
+                    <li class="t-item">
+                        <span class="t-dot" aria-hidden="true"></span>
+                        <div class="t-card">
+                            <span class="t-tag">Current focus</span>
+                            <h3>Python and AI/ML</h3>
+                            <p class="t-sub">Self-directed learning</p>
+                            <p>Learning Python and the fundamentals of machine learning to build smarter software.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section id="contact" class="section contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <h2 class="section-title reveal">Get in touch</h2>
+                    <p class="lead reveal">I'm looking for an internship or a junior software role. If you have an opening, a question or a project in mind, write to me.</p>
+                    <div class="contact-actions reveal">
+                        <button type="button" class="btn btn-glow magnetic" id="copyEmail"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span id="copyLabel">Copy email</span></button>
+                        <a class="btn btn-ghost magnetic" href="mailto:osamajamal0868@gmail.com">Email me directly</a>
+                    </div>
+                    <p class="contact-mail reveal">osamajamal0868@gmail.com</p>
+                    <p class="sr-only" id="copyStatus" role="status" aria-live="polite"></p>
+                    <div class="contact-row reveal">
+                        <a class="hello magnetic" href="mailto:osamajamal0868@gmail.com" aria-label="Email Osama">
+                            <svg class="hello-ring" viewBox="0 0 200 200" aria-hidden="true">
+                                <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+                                <text><textPath href="#circ" textLength="480" lengthAdjust="spacing">Say hello · Say hello · Say hello · </textPath></text>
+                            </svg>
+                            <svg class="ico hello-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                        </a>
+                        <ul class="social"><li><a href="https://github.com/osama-0868" target="_blank" rel="noopener" aria-label="Osama on GitHub"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a></li><li><a href="https://www.linkedin.com/in/osama-jamal0868" target="_blank" rel="noopener" aria-label="Osama on LinkedIn"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li></ul>
+                    </div>
+                </div>
+                <form id="contactForm" class="form reveal">
+                    <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+                    <div class="field"><label for="email">Your email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+                    <div class="field"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
+                    <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button type="submit" class="btn btn-glow magnetic"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-send"/></svg><span>Send message</span></button>
+                    <p class="form-note" id="formNote">This opens your email app with the message filled in.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="big-name" id="bigName" aria-hidden="true">Osama Jamal</p>
+            <div class="footer-inner">
+                <p>&copy; <span id="year">2026</span> Osama Jamal. Kigali, Rwanda.</p>
+                <p class="built">Page built with Python. Animated with JavaScript.</p>
+                <a href="#home" class="text-link">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="term-toggle" id="termToggle" type="button" aria-label="Open the terminal" aria-expanded="false" aria-controls="term"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-terminal"/></svg><span>Terminal</span></button>
+    <section class="term" id="term" role="dialog" aria-label="Interactive terminal" aria-hidden="true">
+        <div class="term-top">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="term-title">osama@portfolio: ~</span>
+            <button class="term-close" id="termClose" type="button" aria-label="Close the terminal">&times;</button>
+        </div>
+        <div class="term-out" id="termOut" role="log" aria-live="polite"></div>
+        <form class="term-in" id="termForm" autocomplete="off">
+            <label for="termInput" class="prompt">$</label>
+            <input id="termInput" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Type a command">
+        </form>
+    </section>
+
+    <script type="application/json" id="site-data">{"name": "Osama Jamal", "role": "Software engineering student in Kigali, building with Java, C++, JavaScript and SQL.", "status": "Open to internships and junior roles", "location": "Kigali, Rwanda", "email": "osamajamal0868@gmail.com", "github": "https://github.com/osama-0868", "linkedin": "https://www.linkedin.com/in/osama-jamal0868", "skills": [{"group": "Languages", "items": ["Java", "C++", "JavaScript", "SQL"]}, {"group": "Web", "items": ["HTML5", "CSS3", "Responsive design", "Firebase"]}, {"group": "Tools", "items": ["Git", "GitHub", "VS Code"]}, {"group": "Learning now", "items": ["Python", "AI/ML", "Advanced JavaScript"]}], "projects": [{"slug": "vision-office", "title": "The Vision Office", "blurb": "A live website for an education-focused organisation, built around the line \"Shaping Bright Futures Through Education\" and hosted on Firebase.", "url": "https://the-vision-dd56e.web.app"}, {"slug": "jtc", "title": "JTC Training Website", "blurb": "A website for JTC with login and verification pages, a custom 404 page and Firebase behind it.", "url": "https://github.com/osama-0868/JAMAL-TRAINING-JTC"}, {"slug": "bank", "title": "Bank Management System", "blurb": "A relational database project for a bank, written in SQL.", "url": "https://github.com/osama-0868/bank_management_system"}], "education": [{"title": "Software engineering", "place": "Adventist University of Central Africa, Kigali", "text": "Studying software development with a focus on programming and databases. Coursework projects include a revenue administration database for my DBMS course."}, {"title": "Web development and Firebase", "place": "Self-directed learning", "text": "Building and deploying websites with HTML, CSS, JavaScript and Firebase hosting."}, {"title": "Python and AI/ML", "place": "Self-directed learning", "text": "Learning Python and the fundamentals of machine learning to build smarter software."}], "code": {"java": ["<span class=\"k\">public<\/span> <span class=\"k\">class<\/span> <span class=\"t\">Osama<\/span> {", "  <span class=\"k\">String<\/span> role = <span class=\"s\">&quot;Software Engineering Student&quot;<\/span>;", "  <span class=\"k\">String<\/span>[] stack = { <span class=\"s\">&quot;Java&quot;<\/span>, <span class=\"s\">&quot;C++&quot;<\/span>, <span class=\"s\">&quot;JavaScript&quot;<\/span>, <span class=\"s\">&quot;SQL&quot;<\/span> };", "  <span class=\"k\">String<\/span> learning = <span class=\"s\">&quot;Python &amp; AI/ML&quot;<\/span>;", "  <span class=\"k\">boolean<\/span> openToInternships = <span class=\"k\">true<\/span>;", "}"], "python": ["<span class=\"c\"># osama.py<\/span>", "osama = {", "    <span class=\"s\">&quot;role&quot;<\/span>: <span class=\"s\">&quot;Software Engineering Student&quot;<\/span>,", "    <span class=\"s\">&quot;stack&quot;<\/span>: [<span class=\"s\">&quot;Java&quot;<\/span>, <span class=\"s\">&quot;C++&quot;<\/span>, <span class=\"s\">&quot;JavaScript&quot;<\/span>, <span class=\"s\">&quot;SQL&quot;<\/span>],", "    <span class=\"s\">&quot;learning&quot;<\/span>: <span class=\"s\">&quot;Python &amp; AI/ML&quot;<\/span>,", "    <span class=\"s\">&quot;open_to_internships&quot;<\/span>: <span class=\"k\">True<\/span>,", "}"]}, "plain": {"java": ["public class Osama {", "  String role = \"Software Engineering Student\";", "  String[] stack = { \"Java\", \"C++\", \"JavaScript\", \"SQL\" };", "  String learning = \"Python & AI/ML\";", "  boolean openToInternships = true;", "}"], "python": ["# osama.py", "osama = {", "    \"role\": \"Software Engineering Student\",", "    \"stack\": [\"Java\", \"C++\", \"JavaScript\", \"SQL\"],", "    \"learning\": \"Python & AI/ML\",", "    \"open_to_internships\": True,", "}"]}}</script>
+    <script src="script.js"></script>
+</body>
+
+</html>
